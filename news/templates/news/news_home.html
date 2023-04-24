@@ -1,0 +1,22 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Test text{% endblock %}
+
+
+{% block content %}
+   <div class="features">
+    <h1>News to website</h1>
+    {% if news %}
+        {% for el in news %}
+            <div class="alert alert-warning">
+                <h3>{{ el.title }}</h3>
+                <p>{{ el.anons }}</p>
+            </div>
+        {% endfor %}
+       {% else %}
+            <p>Not you litle!</p>
+       {% endif %}
+
+       {# коментарий #}
+    </div>
+{% endblock %}
