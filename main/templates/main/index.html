@@ -10,14 +10,14 @@
 
         {% for el in values %}
             {% if el == 'Hello' %}
-                {% filter upper %}   верхний регистр
+                {% filter upper %}
                     <p>{{ el }}</p>
                 {% endfilter %}
             {% endif %}
         {% endfor %}
 
         {% for el in obj %}
-            {% filter lower %}  нижний регистр
+            {% filter lower %}
                 <p>{{ el }}</p>
             {% endfilter %}
         {% endfor %}
